@@ -1,0 +1,1745 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>COIN-BOOT</title>
+    <link rel="stylesheet" href="boot-slider.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- slider  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <!--news -->
+
+
+
+
+    <style>
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+        }
+
+        .nav-link .active .btn-primary {
+            border-radius: 9px;
+        }
+
+
+        .btn-home {
+            background: linear-gradient(to right, rgb(109, 109, 248), skyblue);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+
+        .coin-detail-top {
+            overflow: hidden;
+            background: linear-gradient(to right, rgb(113, 113, 240), rgb(115, 93, 240), rgb(87, 87, 141));
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .row {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            justify-content: space-around;
+
+        }
+
+        .coin-detail-top h4 {
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            margin: 0 0 2px;
+        }
+
+        .coin-detail-value {
+            color: white;
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        .nav-item {
+            padding: 0px 20px;
+        }
+
+
+        /* view button  */
+        .btn {
+            background-color: #cdced5;
+            color: #fff;
+            border: 0;
+        }
+
+        .main {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md  navbar-light" style="margin: 20px;">
+        <a class="navbar-brand" href="#"><img src="https://cointopper.com/images/logo.jpg" alt="logo" height="45"
+                title="cointopper" class="logo"></a>
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar"
+            style="flex-flow: row-reverse;font-weight: bold;     margin-left: -34px;margin-right: -34px; margin-top:15px">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active btn-home" aria-current="page" href="#" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ICOs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Airdrops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Guids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hire Experts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="coin-detail-top">
+        <div class="container">
+            <div class="row">
+                <div class="col d-none  d-md-block d-lg-block d-xl-block">
+                    <h4>BTC/USD</h4>
+                    <span class="coin-detail-value" id="bitcoin-head">
+                        $36805.97</span>
+                </div>
+                <div class="col d-none  d-md-block d-lg-block d-xl-block">
+                    <h4>Cryptocurrencies</h4>
+                    <span class="coin-detail-value"> 1554</span>
+                </div>
+                <div class="col">
+                    <h4>24h volume</h4>
+                    <span class="coin-detail-value"> $137.7 B</span>
+                </div>
+                <div class=" col">
+                    <h4>AltCoin M.Cap</h4>
+                    <span class="coin-detail-value"> $-417,467,352,035</span>
+                </div>
+                <div class="col">
+                    <h4>Total M.Cap</h4>
+                    <span class="coin-detail-value"> $267 B</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- view all  -->
+
+    <section class="main">
+        <div class="topper-coin">
+            <div class="row">
+                <div class="col-xs-12" style="margin-top: 40px;">
+                    <h2 class="section-title pull-left" style="color: #505050;display: contents;">Top Viewed
+                        <button type="button" class="btn btn-primary pull-right">View All</button>
+                    </h2>
+                </div>
+            </div>
+
+
+            <!-- slider part -->
+            <div class="carousel-slider slider ">
+
+                <div class="slider1">
+                    <h5 style="font-size: 15px;">Bitcoin </h5>
+                    <div class="price">$9,120.78</div>
+                    <span class=" img-errow arrow-image">
+                        <img src="C:\Users\Nexus\Desktop\Coin-BootStrap\up_arrow.png" alt="up" style="margin-top: 7px;">
+                        <span style="margin-right: 41px;">4.66%</span>
+                        <!-- </span>
+                          <span class="roundimg"> -->
+                        <img src="p1.png" alt="image1">
+                    </span>
+                    </span>
+                </div>
+
+
+
+                <!-- slider 2 -->
+
+                <div class="slider2">
+                    <h5>Cardano </h5>
+                    <div class="price">$0.05125</div>
+                    <span class=" img-errow arrow-image">
+                        <img src="C:\Users\Nexus\Desktop\Coin-BootStrap\up_arrow.png" alt="up" style="margin-top: 7px"
+                            ;>
+                        <span>5.36%</span>
+                        <!-- </span>
+                        <span class="roundimg"> -->
+                        <img src="p2.png" alt="image1">
+                    </span>
+                    </span>
+                </div>
+                <!-- slider 3 -->
+
+                <div class="slider3">
+                    <h5>EOS</h5>
+                    <div class="price">$9,120.78</div>
+                    <span class=" img-errow arrow-image">
+                        <img src="C:\Users\Nexus\Desktop\coin-topper\up_arrow.png" alt="up" style="margin-top: 7px;">
+                        <apan>4.66%</apan>
+                        <!-- </span>
+                            <span class="roundimg"> -->
+                        <img src="p3.png" alt="image1" style="margin-left: 48px;">
+                    </span>
+                    </span>
+                </div>
+
+                <!-- slider 4 -->
+
+                <div class="slider4">
+                    <h5>Bitcoin cash</h5>
+                    <div class="price">$9,120.78</div>
+                    <span class=" img-errow arrow-image">
+                        <img src="C:\Users\Nexus\Desktop\Coin-BootStrap\up_arrow.png" alt="up" style="margin-top: 7px;">
+                        <span>4.66%</span>
+                        <!-- </span>
+                            <span class="roundimg"> -->
+                        <img src="p4.png" alt="image1">
+                    </span>
+                    </span>
+                </div>
+
+                <!-- slider 5 -->
+                <div class="slider5">
+                    <h5>ChainLink</h5>
+                    <div class="price">$9,120.78</div>
+                    <span class=" img-errow arrow-image">
+                        <img src="C:\Users\Nexus\Desktop\coin-topper\up_arrow.png" alt="up" style="margin-top: 7px;">
+                        <span>4.66%</span>
+                        <!-- </span>
+                            <span class="roundimg"> -->
+                        <img src="p5.png" alt="image1">
+                    </span>
+                    </span>
+                </div>
+
+                <!-- slider 6 -->
+
+                <div class="slider6">
+                    <h5>Ripple</h5>
+                    <div class="price">$9,120.78</div>
+                    <span class=" img-errow arrow-image">
+                        <img src="C:\Users\Nexus\Desktop\Coin-BootStrap\up_arrow.png" alt="up" style="margin-top: 7px;">
+                        <span>4.66%</span>
+                        <!-- </span>
+                            <span class="roundimg"> -->
+                        <img src="p6.png" alt="image1">
+                    </span>
+                    </span>
+                </div>
+
+                <!-- slider 7 -->
+                <div class="slider7">
+                    <h5>Dotcoin</h5>
+                    <div class="price">$9,120.78</div>
+                    <span class=" img-errow arrow-image">
+                        <img src="C:\Users\Nexus\Desktop\Coin-BootStrap\up_arrow.png" alt="up" style="margin-top: 7px;">
+                        <span>4.66%</span>
+                        <!-- </span>
+                            <span class="roundimg"> -->
+                        <img src="p7.png" alt="image1">
+                    </span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Cryptocurrencies  & search section-->
+
+            <div class="coin-list">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <h2 class="section-title pull-left" style="color: #505050; display: contents;">Cryptocurrencies
+
+                            <form class="d-flex" style="float:right">
+
+
+                                <input class="form-control me-2" type="search" placeholder="Search Coin"
+                                    aria-label="Search" style="background-color:#cdced5;color: white;">
+                                <button class="btn btn-outline-success" type="submit">USD</button>
+
+
+
+
+
+                            </form>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr style="color: blue; font-weight: bold; font-size:small;padding: 0px; ">
+                            <th>#</th>
+                            <th> </th>
+                            <th>NAME<i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                            <th>CHANGE<i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                            <th>PRICE<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </th>
+
+                            <th class="hide">24HR CHANGE<i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                            <th class="hide">GRAPH(7DAY)</th>
+                            <th class="hide">COINS<i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                            <th class="hide">MARKET CAP<i class="fa fa-angle-up" aria-hidden="true"></i></th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+
+                            <td><img src="p1.png" style="width: 20px; height:20px;"></td>
+                            <td style=" font-weight: bold;">
+                                Bitcoin
+                                <div class="tbl-cap-value"
+                                    style=justify-content:left;color:grey;font-size:15px;font-weight:normal;padding-top:2px;>
+                                    BTC </div>
+                            </td>
+
+                            <td data-text="4.46">
+                                <div class="tbl-change">
+                                    <span class="text-success">
+                                        <img src="up_arrow_green.png" style="height: 13px;width: 13px;">
+                                        4.46%
+                                    </span>
+                                </div>
+                            </td>
+
+                            <td style="text-align: left; font-weight:normal;display: grid;">$9,120.78
+                                <div class="fa fa-btc" aria-hidden="true"
+                                    style=color:grey;font-size:15px;line-height:0px;>1.00000000 </div>
+                            </td>
+
+                            <td style="color:darkblue;">
+                                <div class="tbl-price"><img src="up_arrow_green.png"
+                                        style="height: 13px;width: 13px;">$10967
+                                </div>
+                                <div class="tbl-price"><img src="C:\Users\Nexus\Desktop\coin-topper\down_arrow_red.png"
+                                        style="height: 13px;width: 13px;">$10538
+                                </div>
+
+                            </td>
+
+                            <td class="graph"><img src="graph.png"></td>
+                            <td class="hide" style="text-align: center;">18.25M</td>
+                            <td class="hide" style="text-align: center;">$166.5B</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>2</td>
+                            <td><img src="p2.png" style="width: 20px; height:20px;"></td>
+                            <td style="font-weight: bold;">Ethereum
+                                <div class="tbl-cap-value"
+                                    style=justify-content:left;color:grey;font-size:15px;font-weight:normal>ETH </div>
+                            </td>
+
+                            <td data-text="4.46">
+                                <div class="tbl-change">
+                                    <span class="text-success">
+                                        <img src="up_arrow_green.png" style="height: 13px;width: 13px;">
+                                        3.98%
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="text-align:left;display:grid;">$9,120.78
+                                <div class="fa fa-btc" aria-hidden="true"
+                                    style=justify-content:left;color:grey;font-size:15px;letter-spacing:-0.34px;line-height:0px;>
+                                    0.025316300
+                                </div>
+                            </td>
+
+                            <td style="color:darkblue" data-text="10967.21">
+                                <div class="tbl-price"><img src="up_arrow_green.png"
+                                        style="height: 13px;width: 13px;"></i>$10967
+                                </div>
+                                <div class="tbl-price"><img src="C:\Users\Nexus\Desktop\coin-topper\down_arrow_red.png"
+                                        style="height: 13px;width: 13px;">$10538
+                                </div>
+
+
+
+                            </td>
+                            <td class="graph"><img src="graph.png"></td>
+                            <td class="hide" style="text-align: center;">8.25M</td>
+                            <td class="hide" style="text-align: center;">$166.5B</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td><img src="p3.png" style="width: 20px; height:20px;"></td>
+                            <td style=" font-weight: bold;">Ripple
+                                <div class="tbl-cap-value" style=justify-content:left;color:grey;font-size:15px;>XRP
+                                </div>
+                            </td>
+
+                            <td data-text="4.46">
+                                <div class="tbl-change">
+                                    <span class="text-success">
+                                        <img src="up_arrow_green.png" style="height: 13px;width: 13px;">
+                                        8.46%
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="text-align: left;display: grid;">$9,120.78
+                                <div class="fa fa-btc" aria-hidden="true"
+                                    style=justify-content:left;color:grey;font-size:15px;letter-spacing:-0.34px;line-height:14px;>
+                                    0.0000002628
+                                </div>
+                            </td>
+                            </td>
+
+                            <td style="color:darkblue;" data-text="10967.21">
+
+                                <div class="tbl-price"><img src="up_arrow_green.png"
+                                        style="height: 13px;width: 13px;">$10967
+                                </div>
+                                <div class="tbl-price"><img src="C:\Users\Nexus\Desktop\coin-topper\down_arrow_red.png"
+                                        style="height: 13px;width: 13px;">$10538
+                                </div>
+
+
+
+                            </td>
+                            <td class="graph"><img src="graph.png"></td>
+                            <td class="hide" style="text-align: center;">218.25M</td>
+                            <td class="hide" style="text-align: center;">$166.5B</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td><img src="p4.png" style="width: 20px; height:20px;"></td>
+                            <td style="font-weight: bold;">Bitcoin Cash
+                                <div class="tbl-cap-value" style=justify-content:left;color:grey;font-size:15px;>BCH
+                                </div>
+                            </td>
+
+                            <td data-text="4.46">
+                                <div class="tbl-change">
+                                    <span class="text-success">
+                                        <img src="up_arrow_green.png" style="height: 13px;width: 13px;">
+                                        5.52%
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="text-align: left;display: grid;">$9,120.78
+                                <div class="fa fa-btc" aria-hidden="true"
+                                    style=justify-content:left;color:grey;font-size:15px;letter-spacing:-0.34px;line-height:14px;>
+                                    0.36.2548000
+                                </div>
+                            </td>
+                            </td>
+                            <td style="color:darkblue;" data-text="10967.21">
+
+                                <div class="tbl-price"><img src="up_arrow_green.png"
+                                        style="height: 13px;width: 13px;">$10967
+                                </div>
+                                <div class="tbl-price"><img src="C:\Users\Nexus\Desktop\coin-topper\down_arrow_red.png"
+                                        style="height: 13px;width: 13px;">$10538
+                                </div>
+
+
+
+                            </td>
+
+                            <td class="graph"><img src="graph.png"></td>
+                            <td class="hide" style="text-align: center;">165.5M</td>
+                            <td class="hide" style="text-align: center;">$166.5B</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td><img src="p5.png" style="width: 20px; height:20px;"></td>
+                            <td style=" font-weight: bold;">Tether
+                                <div class="tbl-cap-value" style=justify-content:left;color:grey;font-size:15px;>USTD
+                                </div>
+                            </td>
+
+                            <td data-text="4.46">
+                                <div class="tbl-change">
+                                    <span class="text-success">
+                                        <img src="up_arrow_green.png" style="height: 13px;width: 13px;">
+                                        4.46%
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="text-align: left;display: grid;">$9,120.78
+                                <div class="fa fa-btc" aria-hidden="true"
+                                    style=justify-content:left;color:grey;font-size:15px;letter-spacing:-0.34px;line-height:14px;>
+                                    0.000025896
+                                </div>
+                            </td>
+                            </td>
+                            <td style="color:darkblue;" data-text="10967.21">
+
+                                <div class="tbl-price"><img src="up_arrow_green.png"
+                                        style="height: 13px;width: 13px;">$10967
+                                </div>
+                                <div class="tbl-price"><img src="C:\Users\Nexus\Desktop\coin-topper\down_arrow_red.png"
+                                        style="height: 13px;width: 13px;">$10538
+                                </div>
+
+
+
+                            </td>
+                            <!-- <td style="text-align: center;">$10944</td> -->
+                            <td class="graph"><img src="graph.png"></td>
+                            <td class="hide" style="text-align: center;">78.25M</td>
+                            <td class="hide" style="text-align: center;">$166.5B</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><img src="p6.png" style="width: 20px; height:20px;"></td>
+                            <td style="font-weight: bold;">Litecoin
+                                <div class="tbl-cap-value" style=justify-content:left;color:grey;font-size:15px;>LTC
+                                </div>
+                            </td>
+
+                            <td data-text="4.46">
+                                <div class="tbl-change">
+                                    <span class="text-success">
+                                        <img src="up_arrow_green.png" style="height: 13px;width: 13px;">
+                                        3.86%
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="text-align: left;display: grid;">$9,120.78
+                                <div class="fa fa-btc" aria-hidden="true"
+                                    style=justify-content:left;color:grey;font-size:15px;letter-spacing:-0.34px;line-height:14px;>
+                                    1.000000258
+                                </div>
+                            </td>
+                            </td>
+                            <td style="color:darkblue;" data-text="10967.21">
+
+                                <div class="tbl-price"><img src="up_arrow_green.png"
+                                        style="height: 13px;width: 13px;">$10967
+                                </div>
+                                <div class="tbl-price"><img src="C:\Users\Nexus\Desktop\coin-topper\down_arrow_red.png"
+                                        style="height: 13px;width: 13px;">$10538
+                                </div>
+
+
+
+                            </td>
+                            <!-- <td style="text-align: center;">$10944</td> -->
+                            <td class="graph"><img src="graph.png"></td>
+                            <td class="hide" style="text-align: center;">18.25M</td>
+                            <td class="hide" style="text-align: center;">$166.5B</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td><img src="p7.png" style="width: 20px; height:20px;"></td>
+                            <td style="font-weight: bold;">Bitcoin Cash
+                                <div class="tbl-cap-value" style=justify-content:left;color:grey;font-size:15px;>BTC
+                                </div>
+                            </td>
+
+                            <td data-text="4.46">
+                                <div class="tbl-change">
+                                    <span class="text-success">
+                                        <img src="up_arrow_green.png" style="height: 13px;width: 13px;">
+                                        2.64%
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="text-align: left;display: grid;">$9,120.78
+                                <div class="fa fa-btc" aria-hidden="true"
+                                    style=justify-content:left;color:grey;font-size:15px;letter-spacing:-0.34px;line-height:14px;>
+                                    0.0000000258
+                                </div>
+                            </td>
+                            </td>
+                            <td style="color:darkblue;" data-text="10967.21">
+
+                                <div class="tbl-price"><img src="up_arrow_green.png"
+                                        style="height: 13px;width: 13px;">$10967
+                                </div>
+                                <div class="tbl-price"><img src="C:\Users\Nexus\Desktop\coin-topper\down_arrow_red.png"
+                                        style="height: 13px;width: 13px;">$10538
+                                </div>
+
+
+
+                            </td>
+                            <!-- <td style="text-align: center;">$10944</td> -->
+                            <td class="graph"><img src="graph.png"></td>
+                            <td class="hide" style="text-align: center;">18.25M</td>
+                            <td class="hide" style="text-align: center;">$166.5B</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+    </section>
+
+    <div class="container" style="text-align: -webkit-center;">
+        <a href="#" class="previous">&laquo; Previous</a>
+        <a href="#" class="next">Next &raquo;</a>
+
+
+    </div>
+    </div>
+
+    <div class="container" style="width: 75%;">
+        <div class="col-xs-12" style="margin-top: 40px;">
+            <h2 class="section-title pull-left" style="color: #505050;display: contents;font-weight: bolder;">NEWS
+                <button type="button" class="btn btn-primary pull-right">View All</button>
+            </h2>
+        </div>
+    </div>
+
+
+
+    <!-- news slider -->
+
+
+    <div class="container news-section">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="news-slider" class="owl-carousel news-sliders">
+                    <div class="post-slide" style="border: 2px solid #cdced5;border-radius: 27px;">
+                        <div class="post-img">
+
+                            <img title="News" src="n1.jpg" alt="">
+
+
+                        </div>
+
+                        <h3 class="post-title"><a href="#">
+                                <p>XRP is Better Than BTC, says Brad Garlinghouse, the CEO of R...</p>
+                                <p class="footer-news-date pull-right" style="color:  #b1b2b7;">October 03, 2018</p>
+                            </a></h3>
+
+                    </div>
+
+                    <div class="post-slide" style="border: 2px solid #cdced5;border-radius: 27px;">
+                        <div class="post-img">
+                            <img title="News" src="n2.jpg" alt="">
+
+
+                        </div>
+
+                        <h3 class="post-title"><a href="#">
+                                <p>US Federal Court: Cryptocurrencies to be treated as commodit...</p>
+                                <p class="footer-news-date pull-right" style="color:  #b1b2b7;">October 03, 2018</p>
+                            </a></h3>
+
+                    </div>
+                    <div class="post-slide" style="border: 2px solid #cdced5;border-radius: 27px;">
+                        <div class="post-img">
+                            <img title="News" src="n3.png" alt="">
+
+
+                        </div>
+
+                        <h3 class="post-title"><a href="#">
+                                <p>Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
+                                <p class="footer-news-date pull-right" style="color:  #b1b2b7;">October 03, 2018</p>
+                            </a></h3>
+
+                    </div>
+                    <div class="post-slide" style="border: 2px solid #cdced5;border-radius: 27px;">
+                        <div class="post-img">
+                            <img title="News" src="n4.jpg" alt="">
+
+
+                        </div>
+
+                        <h3 class="post-title"><a href="#">
+                                <p>Finally, Ripple&#039;s xRapid Goes Live xRapid Goes Live xRapid ...</p>
+
+                                <p class="footer-news-date pull-right" style="color:  #b1b2b7;">October 03, 2018</p>
+                            </a></h3>
+
+                    </div>
+                    <div class="post-slide" style="border: 2px solid #cdced5;border-radius: 27px;">
+                        <div class="post-img">
+                            <img title="News" src="n5.jpg" alt="">
+
+
+                        </div>
+
+                        <h3 class="post-title"><a href="#">
+                                <p>XRP is Better Than BTC, says Brad Garlinghouse, the CEO of R...</p>
+                                <p class="footer-news-date pull-right" style="color:  #b1b2b7;">October 03, 2018</p>
+                            </a></h3>
+
+                    </div>
+                    <div class="post-slide" style="border: 2px solid #cdced5;border-radius: 27px;">
+                        <div class="post-img">
+                            <img title="News" src="n6.jpg" alt="">
+
+
+                        </div>
+
+                        <h3 class="post-title"><a href="#">
+                                <p>New Google Update Challenges Cryptojackers xRapid...</p>
+                                <p class="footer-news-date pull-right" style="color:  #b1b2b7;">October 03, 2018</p>
+                            </a></h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- footerr -->
+
+    <div class="jumbotron">
+        <div class="container-fuild">
+
+
+
+            <div class="row">
+                <div class=" col-xs-5 col-md-2 pull-left">
+
+                    <img title="Cointopper" src="footer_logo.jpg" alt="logo" style="max-width: 100%;border: none;">
+                    <ul class="footer-links" style="list-style-type: none;">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Advertise</a> </li>
+                        <li><a href="#">Hire Experts</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-5 col-md-2 pull-left">
+                    <h4 class="footer-link-title">Cryptocurrency</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Bitcoin </a></li>
+                        <li><a href="#">Ethereum </a></li>
+                        <li><a href="#">Ripple </a></li>
+                        <li><a href="#">Tether </a></li>
+                        <li><a href="#">ChainLink </a></li>
+                        <li><a href="#" class="footer-link-title">Submit Coin</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-7 col-md-2">
+                    <h4 class="footer-link-title">ICOs</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">ACA Network</a></li>
+                        <li><a href="#">AgroTechFarm</a></li>
+                        <li><a href="#">CRYSTALS</a></li>
+                        <li><a href="#">Coin Analyst</a></li>
+                        <li><a href="#">INGOT COIN</a></li>
+                        <li><a href="#" class="footer-link-title">Submit ICO</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 col-md-2">
+                    <h4 class="footer-link-title">Airdrops</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">imusify</a></li>
+                        <li><a href="#">Bidooh</a></li>
+                        <li><a href="#">Tachain</a></li>
+                        <li><a href="#">Spiking</a></li>
+                        <li><a href="#">Efforce</a></li>
+                        <li><a href="#" class="footer-link-title">Submit Airdrop</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="">
+                        <h4 class="footer-link-title">Crypto news &amp; updates</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img src="f1.jpg">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>US Federal Court: Cryptocurrencies to be treated as commodit...</p>
+                                        <!-- <p class="footer-news-date">October 05, 2018</p> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img src="f2.png">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
+                                        <!-- <p class="footer-news-date">October 03, 2018</p> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img src="f3.jpg">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
+                                        <!-- <p class="footer-news-date">October 03, 2018</p> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img src="f4.jpg">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
+                                        <!-- <p class="footer-news-date">October 03, 2018</p> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img src="f5.jpg">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
+                                        <!-- <p class="footer-news-date">October 03, 2018</p> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 footer-row">
+                        <div class="footer-newsletter">
+                            <h4 class="footer-link-title">Newsletter</h4>
+
+                            <form method="POST" action="https://cointopper.com" accept-charset="UTF-8"
+                                class="subscribeForm form-inline text-right subscribeFormFooter"><input name="_token"
+                                    type="hidden" value="5aCiS3Ml5XkwKfjhx7t6pKdJKbyPmRqiZSWJO4Pg">
+                                <div class="form-inline text-left">
+                                    <div class="input-group">
+                                        <input placeholder="Your Email" class="form-control" id="subscribe_email"
+                                            data-msg="Please enter your email address" data-rule="email"
+                                            name="subscribe_email" type="email" value=""> <span class="input-group-btn">
+                                            <button type="submit" id="news" class="btn btn-primary"><i
+                                                    class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <div class="ct2" id="subscribeerrormessagefooter"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <h4 class="footer-link-title pull-left footer-download">Download</h4>
+                            </div>
+                        </div>
+                        <div class="footer-app-icon pull-left">
+
+                            <a href="https://play.google.com/store/apps/details?id=com.cointopper.coinlist"
+                                target="_blank"><img style="max-height: 50px; height: 46px !important;" height="50px"
+                                    width="150px" class="footer-android" src="android_app_icon.png"></a>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <h4 class="footer-link-title pull-left footer-download">&nbsp;</h4>
+                            </div>
+                        </div>
+                        <div class="footer-app-icon pull-left">
+
+                            <a href="https://itunes.apple.com/in/app/cointopper/id1384477178?mt=8" target="_blank"><img
+                                    style="max-height: 50px; height: 46px !important;" width="150px" height="50px"
+                                    class="footer-ios" src="ios_app_icon.png"></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xs-12 col-md-4"> -->
+                </div>
+
+            </div>
+            <!-- <div class="col-xs-12 col-md-4">
+            <div class="">
+                <h4 class="footer-link-title">Crypto news &amp; updates</h4>  
+            </div>
+            <div class="row">
+                                    <div class="col-xs-12 col-md-12 footer-text">
+                    <div class="row">
+                        <a href="#">
+                        <div class="col-xs-4 col-md-3 pull-left">
+                            <img src="f1.jpg">
+
+                        </div>
+                        <div class="col-xs-8 col-md-9 footer-guide-text">
+                            <p>US Federal Court: Cryptocurrencies to be treated as commodit...</p>
+                            <p class="footer-news-date">October 05, 2018</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                                    <div class="col-xs-12 col-md-12 footer-text">
+                    <div class="row">
+                        <a href="#">
+                        <div class="col-xs-4 col-md-3 pull-left">
+                            <img src="f2.png">
+
+                        </div>
+                        <div class="col-xs-8 col-md-9 footer-guide-text">
+                            <p>Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
+                            <p class="footer-news-date">October 03, 2018</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                                    <div class="col-xs-12 col-md-12 footer-text">
+                    <div class="row">
+                        <a href="#">
+                            <img src="f3.jpg">
+
+                        </div>
+                        <div class="col-xs-8 col-md-9 footer-guide-text">
+                            <p>Finally, Ripple's xRapid Goes Live</p>
+                            <p class="footer-news-date">October 03, 2018</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                                    <div class="col-xs-12 col-md-12 footer-text">
+                    <div class="row">
+                        <a href="#">
+                            <img src="f4.jpg">
+
+                        </div>
+                        <div class="col-xs-8 col-md-9 footer-guide-text">
+                            <p>XRP is Better Than BTC, says Brad Garlinghouse, the CEO of R...</p>
+                            <p class="footer-news-date">October 03, 2018</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                                    <div class="col-xs-12 col-md-12 footer-text">
+                    <div class="row">
+                        <a href="#">
+                            <img src="f5.jpg">
+
+                        </div>
+                        <div class="col-xs-8 col-md-9 footer-guide-text">
+                            <p>New Google Update Challenges Cryptojackers</p>
+                            <p class="footer-news-date">October 03, 2018</p>
+                        </div>
+                        </a>
+                    </div> -->
+</div>
+    
+
+    
+
+     <!-- /container -->
+
+
+    <div class="footer-bottom" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 footer-text-bottom">
+                    <div class="row">
+                        <span class="col-xs-12 col-md-4 text-left">
+                            <p>© Copyright 2018. All Rights Reserved.</p>
+                        </span>
+                        <span class="col-xs-12 col-md-4 text-center">
+                            <p>Made with <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> for the
+                                Decentralized World</p>
+                        </span>
+                        <span class="col-xs-12 col-md-4 footer-links-icon text-right">
+                            <p><a href="#" target="_blank">
+                                    <i class="fa fa-facebook fb"></i></a>
+                                &nbsp;&nbsp;<a href="#" target="_blank"><i
+                                        class="fa fa-google-plus gp"></i></a>
+                                &nbsp;&nbsp;<a href="#" target="_blank"><i
+                                        class="fa fa-twitter twitter"></i></a>
+                                &nbsp;&nbsp;<a href="#" target="_blank"><i
+                                        class="fa fa-instagram insta"></i></a>
+                                &nbsp;&nbsp;<a href="#" target="_blank"><i
+                                        class="fa fa-telegram tel"></i></a>
+                                &nbsp;&nbsp;<a href="#"
+                                    target="_blank"><i class="fa fa-youtube-play youtube"></i></a></p>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</main>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 20,
+            slidesToShow: 6,
+            slidesToScroll: 2,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+    <!-- news slider  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#news-slider").owlCarousel({
+                items: 3,
+                itemsDesktop: [1199, 2],
+                itemsDesktopSmall: [1000, 2],
+                itemsMobile: [700, 1],
+                pagination: false,
+                navigationText: false,
+                autoPlay: true
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $('.news-sliders').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: true
+        });
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+_________________________________________________________
+CSS
+__________________________________________________________
+*{
+    margin: 0;
+    padding: 0;
+    /* display: inline-block; */
+     
+}
+
+.carousel-slider h5{
+    font-size: 15px;
+}
+
+ .slider1{
+     
+     width: 172px;
+     border-radius: 10px;
+     background: linear-gradient(to right,blue,lightblue); 
+     margin: 20px;
+ }
+
+ .slider2{
+    width: 172px;;
+    border-radius: 10px;
+    background:linear-gradient(to right,green,yellow);
+    margin: 20px;
+}
+
+
+
+.slider3{
+     
+    width:163px;
+    border-radius: 10px;
+    background:linear-gradient(to right,skyblue,brown);
+    margin: 20px;
+}
+
+.slider4{
+     
+    width:163px;
+    border-radius: 10px;
+    background:linear-gradient(to right,orange,lightblue);
+    margin: 20px;
+}
+
+.slider5{
+     
+    width:163px;
+    border-radius: 10px;
+    background:linear-gradient(to right,rgb(155, 97, 155),rgb(129, 75, 84));
+    margin: 20px;
+}
+
+.slider6{
+     
+    width:163px;
+    border-radius: 10px;
+    background:linear-gradient(to right,rgb(109, 97, 97),rgb(243, 243, 139));
+    margin: 20px;
+}
+.slider7{
+     
+    width:163px;
+    border-radius: 10px;
+    background:linear-gradient(to right,grey,rgb(238, 137, 137));
+    margin: 20px;
+}
+
+h5{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.price{
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+ 
+.img-errow img{
+
+    height:15px;
+    width:15px;
+    padding-left:0;
+    
+}
+
+
+
+.carousel-slider {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .arrow-image {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  /* span{
+    margin-right: 41px;
+  } */
+
+  
+/* table */
+table th{
+    font-size: 11px;
+    color: rgb(77, 139, 253);
+}
+table th .fa{
+    font-size: 14px;
+    font-weight: bold;
+    padding:6px;
+}
+
+
+table tbody tr td{
+    padding:21px 37px;
+    border-bottom:1px solid #eaeff9;
+}
+
+
+.tbl-cap-title {
+    color: #3d3d3d;
+    font-size: 16px;
+    letter-spacing: -0.39px;
+    line-height:9px ;
+    font-weight: 500;
+    text-align:inherit;
+}
+
+.tbl-cap-value {
+    color: #9b9ead;
+    font-size: 14px;
+    letter-spacing: -0.34px;
+    line-height:0;
+    text-align:inherit;
+    font-weight: normal;
+    padding-top: 3px;
+}
+ 
+ td{
+    border-bottom: 1px solid rgb(136, 108, 236);
+    color: rgb(25, 146, 194);
+    display: table-cell;
+    font-weight: normal;
+}
+
+.hidden-xs{
+    font-weight: normal;
+    color: darkblue;
+    display: inline;
+}
+
+
+.tbl-price img{
+    padding-bottom: 0px;
+
+}
+.fa{
+    line-height: 0px ;
+}
+
+.graph{
+    width: 100px;
+    /* background-color: lightskyblue; */
+    padding: 9px 0px 28px 42px;
+}
+
+.text-success{
+    text-align: center;
+font-size: 16px;
+color:green;
+font-weight:normal;
+display:inline;
+}
+
+#a1{
+    color: green;
+}
+
+@media only screen and (max-width: 768px){
+    .hide{
+        display: none;
+      }
+      .graph{
+        display: none;
+      }
+      .hidden-xs{
+        display: none;
+      }
+      .tbl-price{
+          display: none;
+      }
+      table{
+          width: 100%;
+      }
+
+    }
+
+    /* news slider  */
+    .post-slide{
+        margin: 0 15px;
+        /* padding: 0 25px 20px 25px; */
+        background: #fff;
+        box-shadow:0 2px 3px rgba(0, 0, 0, 0.07);
+    }
+    .post-slide .post-img{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .post-slide .post-img img{
+        width: 100%;
+        height: auto;
+        border-image: 0px;
+    
+    }
+    .post-slide .post-icon{
+        width: 60px;
+        height: 60px;
+        display: block;
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        text-align: center;
+        background: #333;
+        opacity: 0;
+        border-radius: 3px;
+        transition: all 300ms ease-in-out 0s;
+    }
+    .post-slide:hover .post-icon{
+        opacity: 1;
+    }
+    .post-slide .post-icon i{
+        font-size: 20px;
+        color: #fff;
+        line-height: 60px;
+    }
+    .post-slide .post-bar{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    .post-slide .post-bar li{
+        display: inline-block;
+        font-size: 15px;
+        color: #676767;
+        margin-right: 5px;
+    }
+    .post-slide .post-bar li:after{
+        content: "/";
+        margin-left: 5px;
+    }
+    .post-slide .post-bar li:last-child:after{
+        content: "";
+    }
+    .post-slide .post-bar li a{
+        color: #8e44ad;
+        transition: all 0.3s ease 0s;
+    }
+    .post-slide .post-bar li a:hover{
+        color: #333;
+        text-decoration: none;
+    }
+    .post-slide .post-bar li a:after{
+        content: ",";
+        margin: 0 5px;
+    }
+    .post-slide .post-bar li a:last-child:after{
+        content: "";
+    }
+    .post-slide .post-title{
+        margin: 15px 0;
+        text-transform: capitalize;
+    }
+    .post-slide .post-title a{
+        font-size: 22px;
+        font-weight: 600;
+        color: #3c3c3c;
+        transition: all 300ms linear 0ms;
+    }
+    .post-slide .post-title a:hover{
+        color: #8e44ad;
+        text-decoration: none;
+    }
+    .post-slide .post-description{
+        font-size: 16px;
+        color: #676767;
+        line-height: 24px;
+        padding-bottom: 15px;
+    }
+    .post-slide .read-more{
+        display: inline-block;
+    }
+    .post-slide .read-more:hover{
+        text-decoration: none;
+    }
+    .post-slide .read-more i{
+        font-size: 19px;
+        color: #333;
+        margin-right: 5px;
+        transition: all 0.40s linear 0s;
+    }
+    .post-slide .read-more span{
+        font-size: 16px;
+        color: #333;
+        opacity: 0;
+        text-transform: uppercase;
+        transition: all 0.40s linear 0s;
+    }
+    .post-slide .read-more:after{
+        content: "";
+        display: block;
+        width: 40%;
+        position: relative;
+        bottom: -20px;
+        border-bottom: 3px solid #333;
+        opacity: 0;
+        transition: all 0.40s linear 0s;
+    }
+    .post-slide:hover .read-more span,
+    .post-slide:hover .read-more:after{
+        opacity: 1;
+    }
+    .post-slide .read-more:hover span,
+    .post-slide .read-more:hover i,
+    .post-slide .read-more:hover:after{
+        color: #8e44ad;
+        border-bottom-color: #8e44ad;
+    }
+
+
+
+
+    .footer-news-date{
+        color: #b1b2b7;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 168px;
+    }
+
+    .post-title p{
+        color: blue;
+        /* padding: 0px 25px 0px 25px; */
+    }
+    .post-slide{
+        border-radius: 30px;
+    }
+    .post-img img{
+        border-top-left-radius: 27px;
+        border-top-right-radius: 27px;
+    }
+
+    .post-img div{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: white;
+        color: black;
+        margin-bottom: 5px;
+        font-family: sans-serif;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+    
+       }
+
+    .post-img:hover {
+        cursor: pointer;
+        
+        
+    }
+
+    .post-img:hover div{
+        width:fit-content;
+        /* padding:unset; */
+        visibility: visible;
+        opacity: 1; 
+       }
+
+
+
+      /* previos and nexgt button  */
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        
+        
+      }
+      
+      
+      .previous {
+       
+        color: grey;
+        border: 2px solid rgb(184, 181, 181);
+        border-radius: 10px;
+      }
+      .previous:hover{
+          cursor:no-drop;
+          background-color: white;
+          text-decoration: none;
+          
+      }
+      
+      .next {
+       
+        color: grey;
+        border: 2px solid rgb(184, 181, 181) ;
+        border-radius: 10px;
+        
+      }
+      .next:hover{
+        background-color: #ddd;
+        text-decoration: none;
+      }
+
+      .news-section{
+          padding-bottom: 50px;
+      }
+
+
+/* footerr  */
+/* .col-xs-7{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.container-fluid{
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.footer-link-title {
+    color: #245da6;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (min-width: 992px){
+.col-md-4 {
+    width: 33.33333333%;
+}
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #3d3d3d;
+    font-weight: 500;
+}
+.footer-text img {
+    height: 40px;
+}
+.footer-guide-text{
+    color: black;
+    /* margin: 0px; */
+    /* padding: 0px; */
+/* }
+
+@media (min-width: 992px){
+.col-md-8 {
+    width: 66.66666667%;
+}
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+@media (min-width: 992px){
+.col-md-3 {
+    width: 25%;
+}
+} */ 
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    padding: inherit;
+    margin-top: 15px;
+  
+
+}
+.footer-links{
+    list-style-type: none;
+    padding: initial;
+}
+      h4{
+          font-size: 15px;
+      }
+      .footer-link-title{
+          font-size: 15px;
+          /* padding: inherit; */
+
+      }
+      .footer-text img {
+        height: 40px;
+        float: right;
+    }
+    .footer-text{
+        color: black;
+    }
+
+    .row {
+        padding: 0;
+        margin: 0;
+         display: flex;
+        overflow: hidden;
+        position: relative;
+        justify-content: space-around;
+        color: blue;
+    }
+
+    .footer-guide-text{
+        color: black;
+        font-size: 12px;
+        display: contents;
+    }
+
+    .jumbotron{
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .footer-bottom p{
+        color: black;
+    }
+
+    @media (max-width: 767px){
+.footer-text-bottom span:nth-of-type(3) p {
+    margin-right: 0px;
+    text-align: center;
+}
+    }
+
+    @media only screen and(max-width:768){
+        .jumbotron .fuild-container{
+            display: block;
+        }
+        .footer-link-title{
+            width: auto;
+        }
+    }
+
+    .footer-bottom{
+        padding-top: 21px;
+        background-color: #bfc6cb;
+        margin-bottom: -63px ;
+    }
+    
+
