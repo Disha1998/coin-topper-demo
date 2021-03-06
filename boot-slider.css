@@ -1,3 +1,15 @@
+
+/* .fa {
+    display:block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  
+} */
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -674,3 +686,93 @@ display:inline;
            @media only screen and(max-width:768px){
 
            }
+
+
+
+           /* fav button  */
+
+           .favbutton{
+               display: block;
+           }
+
+.white-bg-fav {
+    background: #f1eded;
+    /* border-radius: 50%; */
+    width: 45px;
+    height: 45px;
+    margin:0px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    /* line-height: 22; */
+    text-align: center;   
+    line-height: 10px;
+}
+
+.btnstr .fa{
+    padding: 8px 10px;
+    display: inline;
+    border-radius: 50px;
+    
+}
+
+.btncmr .fa{
+    padding: 8px 10px;
+    display: inline;
+    border-radius: 50px;
+    
+}
+
+
+
+
+.coin-row:hover{
+    cursor: pointer;
+}
+
+.coin-row .favbutton {
+    display: none;
+}
+
+.coin-row:hover .tbl-mcap {
+    display: none;
+}
+
+.coin-row:hover .favbutton {
+    display: block;
+    
+}
+
+
+
+/* sir  */
+
+/* .btncmr{​​​​​​​​
+display:none;
+background-color: #eee;
+padding: 4px 6px;
+border-radius: 50%;
+cursor: pointer;
+text-align: center;
+ 
+ }​​​​​​​​ 
+
+ 
+display: none;
+background-color: #eee;
+padding: 4px 8px;
+border-radius: 50%;
+cursor: pointer;
+text-align: center;
+ 
+ }​​​​​​​​
+.thover:hover.star {​​​​​​​​
+display: inline-block;
+text-align: center; 
+ 
+ }​​​​​​​​
+
+.thover:hover.t-hide{​​​​​​​​
+display: none;
+ }​​​​​​​​
+ */
